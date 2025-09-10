@@ -35,14 +35,14 @@ while n2 > 0:
 9 x 8 = 72
 9 x 9 = 81
 '''
-dan = 2
-while dan < 10:
-    number = 1          # 내부에서 선언했습니다.
-    while number < 10:
-        result = dan * number
-        print(f'{dan} x {number} = {result}')
-        number += 1
-    dan += 1
-
-print(number)       # 추후 설명 예정
+# dan = 2
+# while dan < 10:
+#     number = 1          # 내부에서 선언했습니다.
+#     while number < 10:
+#         result = dan * number
+#         print(f'{dan} x {number} = {result}')
+#         number += 1
+#     dan += 1
+#
+# print(number)       # 추후 설명 예정
 # main_for.py
