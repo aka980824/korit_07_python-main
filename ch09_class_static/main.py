@@ -204,7 +204,9 @@ class Shop:
     @classmethod
     def sales(cls, item, count):
         found = False
-        for menu in cls.menu_list:
+        for menu in cls.menu_list:  # 딕셔러니 내에 PAIR 하나 밖에없는 상태인데, 있으면 이하의 코드라인이 실행되고 아니면 넘어감. 즉 반복문
+            # in -> element 기준으로 해야하기에 dictionary의 element 중 'key'기준
+            # 애초에 키가 있으면 value 가 조회가안댐(딕셔너리의 특성).
             if item in menu:
                 price = menu[item]
                 cls.total += price * count
